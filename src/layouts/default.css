@@ -29,17 +29,6 @@ p {
 .background-primary.to-right {
   background-image: linear-gradient(to right, #576980, #192130);
 }
-
 .uk-offcanvas-bar {
   background: #192130;
-}
-
-#usps li > .uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
-  stroke: green;
-  stroke-width: 2;
-}
-
-#project li > .uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
-  stroke: green;
-  stroke-width: 2;
 }
