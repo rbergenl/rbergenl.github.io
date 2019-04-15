@@ -18,7 +18,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "sharp": "^0.22.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "uikit": "^3.0.3"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
