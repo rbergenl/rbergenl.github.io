@@ -22,6 +22,6 @@ Use `import styled from 'styled-components';`
 
 # Publish to Github Pages
 - Run `npm install --save-dev gh-pages`
-- Add to package.json `"deploy": "gatsby build --prefix-paths && gh-pages -d public",`
-- Add to gatsby-config the line `pathPrefix: "/rtbprojects-website-gatsby",` (based on path of github pages url)
+- Create a User repository with the convention `<username>.github.io`
+- Add to package.json `"deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",`
 - In Github, repository settings, set the Github Pages branch to `gh-pages branch`

@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/rtbprojects-website-gatsby",
   siteMetadata: {
     title: `RTB Projects`,
     description: `10 years of experience with Cloud, Frontend and Backend web technology.`,
