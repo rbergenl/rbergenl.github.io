@@ -1,15 +1,14 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import LayoutDefault from "../layouts/default"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Usps from '../components/usps';
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <LayoutDefault>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Usps usps={data.site.siteMetadata.usps} />
+    <Usps />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -18,19 +17,5 @@ const IndexPage = ({ data }) => (
     </div>
   </LayoutDefault>
 )
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        usps {
-          list
-          title
-          icon
-        }
-      }
-    }
-  }
-`
 
 export default IndexPage

@@ -1,46 +1,25 @@
 module.exports = {
+  pathPrefix: "/rtbprojects-website-gatsby",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    usps: [{
-      list: [
-        '0 years web development',
-        '5 years mobile web',
-        'NodeJs ecosystem.',
-        'CI/CD'
-      ],
-      title: 'Web Developer',
-      icon: 'world'
-    },
-    {
-      list: [
-        'Complex corporate environments',
-        'Agile/Scrum practices',
-        'DevOps',
-        'Offshore teams'
-      ],
-      title: 'Team Player',
-      icon: 'comment'
-    },
-    {
-      list: [
-        'Angular 7',
-        'Bootstrap 4',
-        'Progressive Web Apps',
-        'Serverless Architecture'
-      ],
-      title: 'Passionate Learner',
-      icon: 'mail'
-    }],
+    title: `RTB Projects`,
+    description: `10 years of experience with Cloud, Frontend and Backend web technology.`,
+    author: `@rbergenl`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,
