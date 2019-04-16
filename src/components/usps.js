@@ -3,33 +3,31 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from "gatsby"
 
 const Usps = ({ data }) => (
-  <Wrapper>
-    <section id="usps" className="uk-section uk-section-muted">
-      <div className="uk-container uk-text-center">
-        <div className="uk-grid uk-child-width-1-3@m uk-text-center">
-          {data.allUspsJson.edges.map(edge => (
-            <div key={edge.node.title} className="uk-animation-toggle">
-              <div className="usp-icon uk-box-shadow-small uk-border-circle uk-animation-scale-up">
-                <span data-uk-icon={"icon: " + edge.node.icon + "; ratio: 4"}></span>
-              </div>
-              <h4>{edge.node.title}</h4>
-              <ul className="uk-list">
-                {edge.node.list.map(text =>
-                  <li key={text}>
-                    <span data-uk-icon="icon: check; ratio: 1" className="uk-margin-small-right"></span>
-                    {text}
-                  </li>
-                )}
-              </ul>
+  <StyledSection id="usps" className="uk-section uk-section-muted">
+    <div className="uk-container uk-text-center">
+      <div className="uk-grid uk-child-width-1-3@m uk-text-center">
+        {data.edges.map(edge => (
+          <div key={edge.node.title} className="uk-animation-toggle">
+            <div className="usp-icon uk-box-shadow-small uk-border-circle uk-animation-scale-up">
+              <span data-uk-icon={"icon: " + edge.node.icon + "; ratio: 4"}></span>
             </div>
-          ))}
-        </div>
+            <h4>{edge.node.title}</h4>
+            <ul className="uk-list">
+              {edge.node.list.map(text =>
+                <li key={text}>
+                  <span data-uk-icon="icon: check; ratio: 1" className="uk-margin-small-right"></span>
+                  {text}
+                </li>
+              )}
+            </ul>
+          </div>
+        ))}
       </div>
-    </section>
-  </Wrapper>
+    </div>
+  </StyledSection>
 )
 
-const Wrapper = styled.div`
+const StyledSection = styled.section`
   .usp-icon {
     height: 120px;
     width: 120px;
@@ -43,23 +41,6 @@ const Wrapper = styled.div`
     stroke-width: 2;
   }
 `;
-
-//export default Usps;
-
-// export const postFragment = graphql`
-//   query {
-//     allUspsJson {
-//       edges {
-//         node {
-//           list
-//           title
-//           icon
-//         }
-//       }
-//     }
-//   }
-// `
-
 
 export default props => (
   <StaticQuery
@@ -76,6 +57,6 @@ export default props => (
         }
       }
     `}
-    render={data => <Usps data={data} {...props} />}
+    render={data => <Usps data={data.allUspsJson} {...props} />}
   />
 );

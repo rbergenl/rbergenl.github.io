@@ -5,53 +5,51 @@ import styled from "styled-components";
 import profilePicture from "../images/profile-picture.jpeg";
 
 const Header = ({ siteTitle }) => (
-  <Wrapper>
-    <header className="background-primary uk-light" style={{textAlign: 'center'}}>
+  <StyledHeader className="background-primary uk-light">
 
-      <div id="sticky" data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 150">
+    <div id="sticky" data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 150">
 
-        <nav className="uk-navbar-container background-primary" data-uk-navbar>
-            <div className="uk-navbar-left">
-              <img src={profilePicture} alt="profile" />
-              <Link to="/" className="uk-navbar-item uk-logo" href="#">RTB Projects</Link>
-            </div>
-            <div className="uk-navbar-right uk-visible@m">
-                <ul className="uk-navbar-nav">
+      <nav className="uk-navbar-container background-primary" data-uk-navbar>
+          <div className="uk-navbar-left">
+            <img src={profilePicture} alt="profile" />
+            <Link to="/" className="uk-navbar-item uk-logo" href="#">RTB Projects</Link>
+          </div>
+          <div className="uk-navbar-right uk-visible@m">
+              <ul className="uk-navbar-nav">
+                  <li><a href="#projects" data-uk-scroll>Projects</a></li>
+                    <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
+                  <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
+                  <li><a href="#contact" data-uk-scroll>Contact</a></li>
+              </ul>
+          </div>
+          <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; flip: true">
+              <div className="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button className="uk-offcanvas-close" type="button" data-uk-close></button>
+                  <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                     <li><a href="#projects" data-uk-scroll>Projects</a></li>
-                      <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
+                    <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
                     <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
                     <li><a href="#contact" data-uk-scroll>Contact</a></li>
-                </ul>
-            </div>
-            <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; flip: true">
-                <div className="uk-offcanvas-bar uk-flex uk-flex-column">
-                  <button className="uk-offcanvas-close" type="button" data-uk-close></button>
-                    <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                      <li><a href="#projects" data-uk-scroll>Projects</a></li>
-                      <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
-                      <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
-                      <li><a href="#contact" data-uk-scroll>Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+                  </ul>
+              </div>
+          </div>
 
-            <div className="uk-navbar-right uk-hidden@m">
-                <a className="uk-navbar-toggle" href="#offcanvas-nav-primary" data-uk-toggle>
-                    <span data-uk-navbar-toggle-icon></span> <span className="uk-margin-small-left">Menu</span>
-                </a>
-            </div>
+          <div className="uk-navbar-right uk-hidden@m">
+              <a className="uk-navbar-toggle" href="#offcanvas-nav-primary" data-uk-toggle>
+                  <span data-uk-navbar-toggle-icon></span> <span className="uk-margin-small-left">Menu</span>
+              </a>
+          </div>
 
-        </nav>
+      </nav>
 
-      </div>
+    </div>
 
-      <div className="uk-container uk-margin-top">
-        <h2 className="uk-heading-divider">Hire an experienced Full Stack Web Developer</h2>
-        <h5 className="uk-margin-bottom">10+ years working with Frontend, Backend and Cloud technology</h5>
-      </div>
+    <div className="uk-container uk-margin-top">
+      <h2 className="uk-heading-divider">Hire an experienced Full Stack Web Developer</h2>
+      <h5 className="uk-margin-bottom">10+ years working with Frontend, Backend and Cloud technology</h5>
+    </div>
 
-    </header>
-  </Wrapper>
+  </StyledHeader>
 )
 
 Header.propTypes = {
@@ -62,7 +60,9 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-const Wrapper = styled.div`
+const StyledHeader = styled.header`
+  text-align: center;
+
   h5 {
     margin-top: 0;
   }
