@@ -15,7 +15,7 @@ const Certificates = ({ data }) => (
                   <li key={edge.node.title}>
                     <div className="uk-card uk-card-default uk-text-center">
                         <div className="uk-card-media-top">
-                            <Img fixed={edge.node.img_url.childImageSharp.fixed} alt={edge.node.title} className="height150" />
+                            <Img resolutions={edge.node.img_url.childImageSharp.resolutions} alt={edge.node.title} height="150px" />
                         </div>
                         <div className="uk-card-body">
                             <h3 className="uk-card-title">{edge.node.title}</h3>
@@ -25,8 +25,8 @@ const Certificates = ({ data }) => (
                 ))}
               </ul>
             </div>
-            <a className="uk-position-center-left uk-position-small" href="#" rel="noopener nofollow" data-uk-slidenav-previous data-uk-slider-item="previous" aria-label="previous"></a>
-            <a className="uk-position-center-right uk-position-small" href="#" rel="noopener nofollow" data-uk-slidenav-next data-uk-slider-item="next" aria-label="next"></a>
+            <a className="uk-position-center-left uk-position-small" href="#previous" rel="noopener nofollow" data-uk-slidenav-previous data-uk-slider-item="previous" data-uk-icon="icon: chevron-left; ratio: 2;" aria-label="previous"><span>previous</span></a>
+            <a className="uk-position-center-right uk-position-small" href="#next" rel="noopener nofollow" data-uk-slidenav-next data-uk-slider-item="next" data-uk-icon="icon: chevron-right; ratio: 2;" aria-label="next"><span>next</span></a>
         </div>
       </div>
     </div>
@@ -34,10 +34,18 @@ const Certificates = ({ data }) => (
 )
 
 const StyledSection = styled.section`
-  .height150 {
-    height: 150px;
+  a span {
+   height: 1px;
+   width: 1px;
+   position: absolute;
+   overflow: hidden;
+   top: -10px;
   }
 `;
+
+// fluid(maxHeight: 150) {
+//   ...GatsbyImageSharpFluid
+// }
 
 export default props => (
   <StaticQuery
@@ -49,8 +57,8 @@ export default props => (
               title
               img_url {
                 childImageSharp {
-                  fixed {
-                    ...GatsbyImageSharpFixed
+                  resolutions( height: 150 ) {
+                    ...GatsbyImageSharpResolutions
                   }
                 }
               }

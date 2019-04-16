@@ -35,8 +35,8 @@ const Header = ({ siteTitle }) => (
           </div>
 
           <div className="uk-navbar-right uk-hidden@m">
-              <a className="uk-navbar-toggle" href="#offcanvas-nav-primary" data-uk-toggle>
-                  <span data-uk-navbar-toggle-icon></span> <span className="uk-margin-small-left">Menu</span>
+              <a className="uk-navbar-toggle" href="#offcanvas-nav-primary" data-uk-toggle="target: #offcanvas-nav-primary">
+                  <span data-uk-icon="icon: menu; ratio: 2"></span>
               </a>
           </div>
 
