@@ -1,0 +1,26 @@
+[
+   {
+      "title": "AWS Developer Associate",
+      "img_url": "../images/certificates/aws-developer-associate.png"
+   },
+   {
+      "title": "Mobile Web Specialist",
+      "img_url": "../images/certificates/mobile_web_specialist.png"
+   },
+   {
+      "title": "Professional Scrum Developer",
+      "img_url": "../images/certificates/professional-scrum-developer.png"
+   },
+   {
+      "title": "Java SE8 Associate",
+      "img_url": "../images/certificates/java-certified.png"
+   },
+   {
+      "title": "Prince 2",
+      "img_url": "../images/certificates/prince2-logo.png"
+   },
+   {
+      "title": "ITIL v3",
+      "img_url": "../images/certificates/itil_v3_certified.png"
+   }
+]
