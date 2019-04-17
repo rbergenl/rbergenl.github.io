@@ -43,10 +43,6 @@ const StyledSection = styled.section`
   }
 `;
 
-// fluid(maxHeight: 150) {
-//   ...GatsbyImageSharpFluid
-// }
-
 export default props => (
   <StaticQuery
     query={graphql`

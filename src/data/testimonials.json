@@ -10,7 +10,7 @@
       "order": 2
    },
    {
-      "text": "This website is a Progressive Web App, built with Vuejs, using server side rendering for SEO purposes. It is hosted on Google Firebase using Functions to keep a serverless architecture. The data of the page is fetched from a GraphQL endpoint.",
+      "text": "This is a Gatsby static website hosted on Github Pages. It is built with the React framework and utilizing Graphql for the data. Lighthouse score has all factors in green.",
       "name": "Robin ten Berge",
       "order": 3
    }

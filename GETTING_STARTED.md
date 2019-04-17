@@ -20,6 +20,10 @@ Use `import styled from 'styled-components';`
 - and to read json files run `npm install --save gatsby-transformer-json`
 - add the plugin to gatsby-config.js
 
+# Work with Images
+- either import directly and use with <img/>
+- or add a relative path to json file, and get the data with graphql childImageFluid/Fixed/Resolutions and using gatsby Img.
+
 # Publish to Github Pages
 - Run `npm install --save-dev gh-pages`
 - Create a User repository with the convention `<username>.github.io`
