@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `rtbprojects-website`,
+        name: `RTB Projects`,
         short_name: `rtbprojects`,
         start_url: `/`,
         background_color: `#2d3a4b`,

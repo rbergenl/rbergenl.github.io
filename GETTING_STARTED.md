@@ -13,13 +13,14 @@ Use `import styled from 'styled-components';`
 # Comply with A11Y
 - Using `<a>` with `data-uk-icon` should have no text. Will not comply with `jsx-a11y/anchor-has-content`. To solve it use solution: http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C7
 
-# Add site data using Graphql
+# Read data from Json using Graphql
 - add data to gatsby-config.js and `import { graphql } from "gatsby"`
 - or run `npm install --save gatsby-source-filesystem`
 - add the plugin with options to gatsby-config.js
 - and to read json files run `npm install --save gatsby-transformer-json`
 - add the plugin to gatsby-config.js
 
+# Read data from Markdown using Graphql
 # Work with Images
 - either import directly and use with <img/>
 - or add a relative path to json file, and get the data with graphql childImageFluid/Fixed/Resolutions and using gatsby Img.
@@ -29,3 +30,6 @@ Use `import styled from 'styled-components';`
 - Create a User repository with the convention `<username>.github.io`
 - Add to package.json `"deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",`
 - In Github, repository settings, set the Github Pages branch to `gh-pages branch`
+
+# Troubleshooting
+- manifest.webmanifest has error or 404 and icons not generated. Solution: upgrade gatsby-plugin-manifest to the latest version.
