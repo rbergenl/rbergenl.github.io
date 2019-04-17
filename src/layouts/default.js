@@ -9,8 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Performance from "../components/performance"
-
 import Header from "../components/header"
 import Footer from "../components/footer"
 
@@ -51,7 +49,6 @@ class LayoutDefault extends React.Component {
         `}
         render={data => (
           <>
-            <Performance />
             <Header siteTitle={data.site.siteMetadata.title} />
             <main>{children}</main>
             <Footer />

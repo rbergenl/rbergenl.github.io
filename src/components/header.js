@@ -17,7 +17,8 @@ const Header = ({ siteTitle }) => (
           <div className="uk-navbar-right uk-visible@m">
               <ul className="uk-navbar-nav">
                   <li><a href="#projects" data-uk-scroll>Projects</a></li>
-                    <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
+                  <li><a href="#demos" data-uk-scroll>Demos</a></li>
+                  <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
                   <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
                   <li><a href="#contact" data-uk-scroll>Contact</a></li>
               </ul>
@@ -27,6 +28,7 @@ const Header = ({ siteTitle }) => (
                 <button className="uk-offcanvas-close" type="button" data-uk-close></button>
                   <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                     <li><a href="#projects" data-uk-scroll>Projects</a></li>
+                    <li><a href="#demos" data-uk-scroll>Demos</a></li>
                     <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
                     <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
                     <li><a href="#contact" data-uk-scroll>Contact</a></li>
@@ -35,7 +37,7 @@ const Header = ({ siteTitle }) => (
           </div>
 
           <div className="uk-navbar-right uk-hidden@m">
-              <a className="uk-navbar-toggle" href="#offcanvas-nav-primary" data-uk-toggle="target: #offcanvas-nav-primary">
+              <a className="uk-navbar-toggle" href="#offcanvas-nav-primary" data-uk-toggle="target: #offcanvas-nav-primary" aria-label="menu">
                   <span data-uk-icon="icon: menu; ratio: 2"></span>
               </a>
           </div>
