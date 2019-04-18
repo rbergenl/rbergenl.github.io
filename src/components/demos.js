@@ -4,14 +4,14 @@ import { StaticQuery, graphql } from "gatsby"
 const Demos = ({ data }) => {
   const { headings } = data.edges[0].node; // only expect one edge
   let framework;
-  let title;
+  let project_url;
   const demos = headings.map((heading, index) => {
     // only process heading 4
     if (heading.depth === 2) return framework = heading.value;
-    if (heading.depth === 3) return title = heading.value;
+    if (heading.depth === 3) return project_url = heading.value;
     return {
       framework: framework,
-      title: title,
+      project_url: project_url,
       description: heading.value
     }
   }).filter(demo => typeof demo !== 'string') // only keep the ones which are not a string but the object
@@ -20,13 +20,12 @@ const Demos = ({ data }) => {
     <section id="demos" className="uk-section">
       <div className="uk-container uk-text-center">
         <h2>Demos</h2>
-        <p><a href="https://github.com/rbergenl/my-demos"  rel="noopener noreferrer" target="_blank" aria-label="my-demos">View here</a></p>
         <div className="uk-table uk-table-responsive">
           <table className="uk-table uk-table-striped uk-text-left">
               <thead>
                   <tr>
                       <th>Framework</th>
-                      <th className="uk-table-expand">Title</th>
+                      <th className="uk-table-expand">Project</th>
                       <th>Description</th>
                   </tr>
               </thead>
@@ -34,7 +33,7 @@ const Demos = ({ data }) => {
               {demos.map(demo => (
                 <tr key={demo.description}>
                   <td>{demo.framework}</td>
-                  <td>{demo.title}</td>
+                  <td><a href={demo.project_url} target="_blank" rel="noopener noreferrer">{demo.project_url}</a></td>
                   <td>{demo.description}</td>
                 </tr>
               ))}
