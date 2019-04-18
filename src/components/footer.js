@@ -14,7 +14,7 @@ class Footer extends React.Component {
               <a href="https://github.com/rbergenl" rel="noopener noreferrer" target="_blank" className="uk-icon-button uk-margin-small-right" data-uk-icon="github" aria-label="github"><span>github</span></a>
             </li>
           </ul>
-          <div className="footer_message">© 2019 RTB Projects. All Rights Reserved</div>
+          <div className="footer_message">© 2019 RTB Projects. Chamber of Commerce number: 74456083. All Rights Reserved. </div>
         </div>
       </StyledFooter>
     );
@@ -23,7 +23,7 @@ class Footer extends React.Component {
 
 const StyledFooter = styled.footer`
   padding: 100px 0;
-  
+
   ul {
     padding-left: 0;
   }
