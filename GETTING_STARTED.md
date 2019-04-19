@@ -43,6 +43,7 @@ Use `import styled from 'styled-components';`
 - Create a User repository with the convention `<username>.github.io`
 - Add a file `static/CNAME` which contains the apex domain (rtbprojects.com)
 - Add to package.json `"deploy": "gatsby build && gh-pages -d public -b master",`
+- If using AWS; add the apex domain (rtbprojects.com) with an A record to the four Github IP addresses (find via google). And add another A record for www.rtbprojects.com with an Alias to the apex domain A record (rtbprojects.com)
 
 
 # Troubleshooting
