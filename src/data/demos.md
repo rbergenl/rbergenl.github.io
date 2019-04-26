@@ -5,7 +5,7 @@ title: My Demos
 ## React
 
 ### https://github.com/rbergenl/tweet-hub-web
-#### A React application using popular modules to build a robust scalable application. Modules include: Redux, Saga, Immutable, Styled-components, Reselect, Routing and Graphql. All components are tested with Jest and Enzyme.
+#### A React application using popular modules to build a robust scalable application. Modules include: Redux, Saga, Immutable, Styled-components, Reselect, Routing and GraphQL. All components are tested with Jest and Enzyme.
 
 ### https://github.com/rbergenl/StatsHub
 #### A React Native application with simple functionality which is published to the Google Play Store. The goal is to demonstrate experience with delivering a native app to the Play Store.
@@ -28,7 +28,7 @@ title: My Demos
 ## VueJS
 
 ### https://github.com/rbergenl/rtbprojects-website-nuxt
-#### A VueJs website built with the Nuxt framework. It uses VueJS components, Server Side Rendering, Axios, Graphql and UIKit. The website runs on Firebase using hosting, functions, firestore and storage.
+#### A VueJs website built with the Nuxt framework. It uses VueJS components, Server Side Rendering, Axios, GraphQL and UIKit. The website runs on Firebase using hosting, functions, firestore and storage.
 
 ## Angular
 

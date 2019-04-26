@@ -7,7 +7,7 @@ const Projects = ({ data }) => (
   <StyledSection id="projects" className="uk-section background-primary to-right uk-light">
     <div className="uk-container uk-text-center">
       <h2 className="uk-heading-divider">Projects</h2>
-      <div className="uk-grid uk-child-width-1-1@s uk-child-width-1-2@m uk-text-center">
+      <div className="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m uk-text-center">
         {data.edges.map(edge => (
           <div key={edge.node.id} className="uk-margin-top">
             <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
