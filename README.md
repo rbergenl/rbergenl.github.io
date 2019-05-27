@@ -1,3 +1,5 @@
+Project created with `gatsby new rtbprojects-website-gatsby https://github.com/gatsbyjs/gatsby-starter-default`
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
