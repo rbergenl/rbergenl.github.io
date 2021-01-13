@@ -1,5 +1,30 @@
 [
    {
+      "id": "ns",
+      "title": "Accelerated the transition to DevOps and the Cloud (AWS).",
+      "type": "big",
+      "year": 2020,
+      "company": "NS",
+      "img_url": "../images/projects/ns_project_logo.png",
+      "paragraphs": [
+         {
+            "text": "Joined team Travel Information Online to improve on the Angular applications: travel planner, bike rental locations, station information and more.",
+            "footer": "Scrum"
+         },
+         {
+            "text": "Initiated collaborations to setup architecture in AWS for running API's in Docker containers and hosting frontend application via Cloudfront",
+            "footer": "DevOps and Cloud"
+         }
+      ],
+      "checkmarks": [
+         "Amazon Web Services (AWS)",
+         "Java 11",
+         "Angular",
+         "Jenkins",
+         "Scrum and DevOps"
+      ]
+   },
+   {
       "id": "abn",
       "title": "Built mobile friendly website Commercial Banking and responsive widgets for Internet Banking.",
       "type": "big",

@@ -1,10 +1,10 @@
 [
    {
       "list": [
-         "10 years web development",
+         "10+ years web development",
          "5 years mobile web",
          "NodeJs ecosystem.",
-         "CI/CD"
+         "CI/CD pipelines"
       ],
       "title": "Web Developer",
       "icon": "world"
@@ -21,9 +21,9 @@
    },
    {
       "list": [
-         "React, Angular, VueJs",
-         "Bootstrap and UIKit",
-         "Progressive Web Apps",
+         "React and React-Native",
+         "GraphQL and Authentication",
+         "E-commerce and SEO",
          "Serverless Architecture"
       ],
       "title": "Passionate Learner",

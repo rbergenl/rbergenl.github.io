@@ -31,7 +31,7 @@ const Projects = ({ data }) => (
 const ProjectModal = ({ project }) => (
   <StyledModal id={project.id} data-uk-modal>
     <div className="uk-modal-dialog">
-        <button className="uk-modal-close-default" type="button" data-uk-close></button>
+        <button className="uk-modal-close-default" aria-label="close-modal" type="button" data-uk-close></button>
         <div className="uk-modal-header">
           {project.company &&
             <h2 className="uk-modal-title">{project.company}</h2>

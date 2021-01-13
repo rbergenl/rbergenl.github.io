@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components";
 import profilePicture from "../images/profile-picture.jpeg";
+// import GithubIcon from '../images/svgs/github.svg';
 
 const Header = ({ siteTitle }) => (
   <StyledHeader className="background-primary uk-light">
@@ -13,11 +14,12 @@ const Header = ({ siteTitle }) => (
           <div className="uk-navbar-left">
             <img src={profilePicture} alt="profile" />
             <Link to="/" className="uk-navbar-item uk-logo" href="#">RTB Projects</Link>
+            {/* <a className="uk-navbar-item uk-logo" aria-label="github rbergenl" href="https://github.com/rbergenl" target="_blank" rel="noreferrer noopener"><GithubIcon className="github-icon" /></a> */}
           </div>
           <div className="uk-navbar-right uk-visible@m">
               <ul className="uk-navbar-nav">
                   <li><a href="#projects" data-uk-scroll>Projects</a></li>
-                  <li><a href="#demos" data-uk-scroll>Demos</a></li>
+                  {/* <li><a href="#demos" data-uk-scroll>Demos</a></li> */}
                   <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
                   <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
                   <li><a href="#contact" data-uk-scroll>Contact</a></li>
@@ -25,7 +27,7 @@ const Header = ({ siteTitle }) => (
           </div>
           <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; flip: true">
               <div className="uk-offcanvas-bar uk-flex uk-flex-column">
-                <button className="uk-offcanvas-close" type="button" data-uk-close></button>
+                <button className="uk-offcanvas-close" aria-label="close-modal" type="button" data-uk-close></button>
                   <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                     <li><a href="#projects" data-uk-scroll>Projects</a></li>
                     <li><a href="#demos" data-uk-scroll>Demos</a></li>
