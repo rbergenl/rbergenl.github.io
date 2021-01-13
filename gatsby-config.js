@@ -31,14 +31,16 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Dosis`
-          }
-        ]
-      }
+        fonts: {
+          google: [
+            {
+              family: 'Dosis',
+            },
+          ],
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
