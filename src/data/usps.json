@@ -3,7 +3,7 @@
       "list": [
          "10+ years web development",
          "5 years mobile web",
-         "NodeJs ecosystem.",
+         "Amazon Web Services",
          "CI/CD pipelines"
       ],
       "title": "Web Developer",
@@ -21,10 +21,10 @@
    },
    {
       "list": [
-         "React and React-Native",
-         "GraphQL and Authentication",
+         "React, React-Native and GraphQL",
          "E-commerce and SEO",
-         "Serverless Architecture"
+         "Serverless Architecture",
+         "NodeJs Ecosystem."
       ],
       "title": "Passionate Learner",
       "icon": "refresh"

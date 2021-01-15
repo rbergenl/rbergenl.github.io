@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
                 <button className="uk-offcanvas-close" aria-label="close-modal" type="button" data-uk-close></button>
                   <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                     <li><a href="#projects" data-uk-scroll>Projects</a></li>
-                    <li><a href="#demos" data-uk-scroll>Demos</a></li>
+                    {/* <li><a href="#demos" data-uk-scroll>Demos</a></li> */}
                     <li><a href="#testimonials" data-uk-scroll>Testimonials</a></li>
                     <li><a href="#certificates" data-uk-scroll>Certificates</a></li>
                     <li><a href="#contact" data-uk-scroll>Contact</a></li>
