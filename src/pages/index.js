@@ -2,12 +2,12 @@ import React from "react"
 
 import LayoutDefault from "../layouts/default"
 import Seo from "../components/seo"
-import Usps from '../components/usps';
+import Usps from "../components/usps"
 // import Demos from '../components/demos';
-import Projects from '../components/projects'
-import Testimonials from '../components/testimonials'
-import Certificates from '../components/certificates'
-import Contact from '../components/contact'
+import Projects from "../components/projects"
+import Testimonials from "../components/testimonials"
+import Certificates from "../components/certificates"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
   <LayoutDefault>

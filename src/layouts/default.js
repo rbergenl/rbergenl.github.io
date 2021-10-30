@@ -12,29 +12,28 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
-import 'uikit/dist/css/uikit.css';
+import "uikit/dist/css/uikit.css"
 import "./default.css"
 
 class LayoutDefault extends React.Component {
-
   constructor(props) {
-    super(props);
-    this.state = { ready: false };
+    super(props)
+    this.state = { ready: false }
   }
 
   componentDidMount() {
-    if (typeof window !== 'undefined') {
-      const uikit = require('uikit/dist/js/uikit.min');
-      const icons = require('uikit/dist/js/uikit-icons.min');
-      uikit.use(icons);
-      this.setState({ ready: true });
+    if (typeof window !== "undefined") {
+      const uikit = require("uikit/dist/js/uikit.min")
+      const icons = require("uikit/dist/js/uikit-icons.min")
+      uikit.use(icons)
+      this.setState({ ready: true })
     }
   }
 
   render() {
-    const { children } = this.props;
+    const { children } = this.props
 
-    if (!this.state.ready ) return null;
+    if (!this.state.ready) return null
 
     return (
       <StaticQuery
@@ -47,7 +46,7 @@ class LayoutDefault extends React.Component {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             <Header siteTitle={data.site.siteMetadata.title} />
             <main>{children}</main>
