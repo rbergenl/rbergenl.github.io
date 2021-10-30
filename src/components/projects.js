@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StaticQuery, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';;
 
 const Projects = ({ data }) => (
   <StyledSection id="projects" className="uk-section background-primary to-right uk-light">
@@ -9,13 +9,15 @@ const Projects = ({ data }) => (
       <h2 className="uk-heading-divider">Projects</h2>
       <div className="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m uk-text-center">
         {data.edges.map(edge => (
-          <div key={edge.node.id} className="uk-margin-top">
+          <div key={edge.node._id} className="uk-margin-top">
             <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
               <div className="uk-animation-toggle">
-                  <a data-uk-toggle={'target: #' + edge.node.id} className="uk-visible-toggle" href={'#' + edge.node.id} >
-                    <Img fluid={edge.node.img_url.childImageSharp.fluid} alt={edge.node.id} />
-                    <div className="uk-light uk-overlay uk-overlay-primary uk-position-center uk-hidden-hover uk-animation-fade uk-animation-fast">
-                        <p className="uk-animation-slide-bottom-small">{edge.node.title}</p>
+                  <a data-uk-toggle={'target: #' + edge.node._id} className="uk-visible-toggle" href={'#' + edge.node._id} >
+                    <div style={{position: 'relative'}}>
+                      <GatsbyImage image={edge.node.img_url.childImageSharp.gatsbyImageData} alt={edge.node._id} />
+                      <div className="uk-light uk-overlay uk-overlay-primary uk-position-center uk-hidden-hover uk-animation-fade uk-animation-fast">
+                          <p className="uk-animation-slide-bottom-small">{edge.node.title}</p>
+                      </div>
                     </div>
                   </a>
               </div>
@@ -29,7 +31,7 @@ const Projects = ({ data }) => (
 )
 
 const ProjectModal = ({ project }) => (
-  <StyledModal id={project.id} data-uk-modal>
+  <StyledModal id={project._id} data-uk-modal>
     <div className="uk-modal-dialog">
         <button className="uk-modal-close-default" aria-label="close-modal" type="button" data-uk-close></button>
         <div className="uk-modal-header">
@@ -72,22 +74,20 @@ li .uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
 const StyledSection = styled.section`
 `;
 
-export default props => (
+const MyProjects = props => (
   <StaticQuery
     query={graphql`
       query {
         allProjectsJson {
           edges {
             node {
-              id
+              _id
               title
               company
               checkmarks
               img_url {
                 childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(layout: FULL_WIDTH)
                 }
               }
               paragraphs {
@@ -102,3 +102,5 @@ export default props => (
     render={data => <Projects data={data.allProjectsJson} {...props} />}
   />
 );
+
+export default MyProjects;

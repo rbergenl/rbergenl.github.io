@@ -43,7 +43,7 @@ const StyledSection = styled.section`
   }
 `;
 
-export default props => (
+const MyProjects = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -61,3 +61,5 @@ export default props => (
     render={data => <Testimonials data={data.allTestimonialsJson} {...props} />}
   />
 );
+
+export default MyProjects;

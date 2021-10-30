@@ -1,6 +1,6 @@
 [
    {
-      "id": "ns",
+      "_id": "ns",
       "title": "Accelerated the transition to DevOps and the Cloud (AWS).",
       "type": "big",
       "year": 2020,
@@ -25,7 +25,7 @@
       ]
    },
    {
-      "id": "abn",
+      "_id": "abn",
       "title": "Built mobile friendly website Commercial Banking and responsive widgets for Internet Banking.",
       "type": "big",
       "year": 2014,
@@ -50,7 +50,7 @@
       ]
    },
    {
-      "id": "other",
+      "_id": "other",
       "title": "IT consultancy and web development for small business owners. And projects that took less than one year.",
       "type": "big",
       "year": 2009,
@@ -90,7 +90,7 @@
       ]
    },
    {
-      "id": "own",
+      "_id": "own",
       "title": "Projects with a group as startup or ventures by myself",
       "type": "big",
       "year": 2008,
@@ -146,7 +146,7 @@
       ]
    },
    {
-      "id": "wur",
+      "_id": "wur",
       "title": "As Project Manager delivered a Prince2 and a Scrum project. As Information Analyst delivered many system descriptions and advisory reports.",
       "type": "big",
       "year": 2012,

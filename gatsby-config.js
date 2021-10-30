@@ -5,6 +5,7 @@ module.exports = {
     author: `@rbergenl`
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
@@ -30,18 +31,19 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: 'Dosis',
-            },
-          ],
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-webfonts`,
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: 'Dosis',
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

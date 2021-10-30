@@ -42,7 +42,7 @@ const StyledSection = styled.section`
   }
 `;
 
-export default props => (
+const MyUsps = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -60,3 +60,5 @@ export default props => (
     render={data => <Usps data={data.allUspsJson} {...props} />}
   />
 );
+
+export default MyUsps;

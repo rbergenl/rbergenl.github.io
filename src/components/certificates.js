@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StaticQuery, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Certificates = ({ data }) => (
   <StyledSection id="certificates" className="uk-section">
@@ -15,7 +15,7 @@ const Certificates = ({ data }) => (
                   <li key={edge.node.title}>
                     <div className="uk-card uk-card-default uk-text-center">
                         <div className="uk-card-media-top">
-                            <Img resolutions={edge.node.img_url.childImageSharp.resolutions} alt={edge.node.title} height="150px" />
+                            <GatsbyImage image={edge.node.img_url.childImageSharp.gatsbyImageData} alt={edge.node.title} height="150px" />
                         </div>
                         <div className="uk-card-body">
                             <h3 className="uk-card-title">{edge.node.title}</h3>
@@ -25,8 +25,8 @@ const Certificates = ({ data }) => (
                 ))}
               </ul>
             </div>
-            <a className="uk-position-center-left uk-position-small" href="#previous" rel="noopener nofollow" data-uk-slidenav-previous data-uk-slider-item="previous" data-uk-icon="icon: chevron-left; ratio: 2;" aria-label="previous"><span>previous</span></a>
-            <a className="uk-position-center-right uk-position-small" href="#next" rel="noopener nofollow" data-uk-slidenav-next data-uk-slider-item="next" data-uk-icon="icon: chevron-right; ratio: 2;" aria-label="next"><span>next</span></a>
+            <a className="uk-position-center-left uk-position-small" href="#previous" rel="noopener nofollow" data-uk-slidenav-previous data-uk-slider-item="previous" aria-label="previous"><span>previous</span></a>
+            <a className="uk-position-center-right uk-position-small" href="#next" rel="noopener nofollow" data-uk-slidenav-next data-uk-slider-item="next" aria-label="next"><span>next</span></a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ const StyledSection = styled.section`
   }
 `;
 
-export default props => (
+const MyCertificates = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -53,9 +53,7 @@ export default props => (
               title
               img_url {
                 childImageSharp {
-                  resolutions( height: 150 ) {
-                    ...GatsbyImageSharpResolutions
-                  }
+                  gatsbyImageData(height: 150)
                 }
               }
             }
@@ -65,4 +63,6 @@ export default props => (
     `}
     render={data => <Certificates data={data.allCertificatesJson} {...props} />}
   />
-);
+)
+
+export default MyCertificates;
