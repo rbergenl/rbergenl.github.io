@@ -8,7 +8,7 @@ const Usps = ({ data }) => (
       <div className="uk-grid uk-child-width-1-3@m uk-text-center">
         {data.edges.map((edge) => (
           <div key={edge.node.title} className="uk-animation-toggle">
-            <div className="usp-icon uk-box-shadow-small uk-border-circle uk-animation-scale-up">
+            <div className="usp-icon uk-box-shadow-small uk-border-circle uk-animation-scale-up uk-margin-top">
               <span
                 data-uk-icon={"icon: " + edge.node.icon + "; ratio: 4"}
               ></span>
