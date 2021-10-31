@@ -1,0 +1,62 @@
+[
+    {
+        "name": "git",
+        "img_url": "../images/techstack/git.webp"
+    },
+    {
+        "name": "react",
+        "img_url": "../images/techstack/react.webp"
+    },
+    {
+        "name": "angular",
+        "img_url": "../images/techstack/angular.webp"
+    },
+    {
+        "name": "jest",
+        "img_url": "../images/techstack/jest.webp"
+    },
+    {
+        "name": "cypress",
+        "img_url": "../images/techstack/cypress.webp"
+    },
+    {
+        "name": "aws",
+        "img_url": "../images/techstack/aws.webp"
+    },
+    {
+        "name": "azure",
+        "img_url": "../images/techstack/azure.webp"
+    },
+    {
+        "name": "java",
+        "img_url": "../images/techstack/java.webp"
+    },
+    {
+        "name": "sql",
+        "img_url": "../images/techstack/sql.webp"
+    },
+    {
+        "name": "jenkins",
+        "img_url": "../images/techstack/jenkins.webp"
+    },
+    {
+        "name": "docker",
+        "img_url": "../images/techstack/docker.webp"
+    },
+    {
+        "name": "figma",
+        "img_url": "../images/techstack/figma.webp"
+    },
+    {
+        "name": "sass",
+        "img_url": "../images/techstack/sass.webp"
+    },
+    {
+        "name": "analytics",
+        "img_url": "../images/techstack/analytics.webp"
+    },
+    {
+        "name": "relay42",
+        "img_url": "../images/techstack/relay42.webp"
+    }
+]
