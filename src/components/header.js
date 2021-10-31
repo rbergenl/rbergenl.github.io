@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import profilePicture from "../images/profile-picture.jpeg"
+import profilePicture from "../images/profile-picture.webp"
 // import GithubIcon from '../images/svgs/github.svg';
 
 const Header = ({ siteTitle }) => (
