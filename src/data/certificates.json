@@ -1,26 +1,37 @@
 [
    {
+      "title": "Azure Solutions Expert",
+      "img_url": "../images/certificates/microsoft-certified-expert.png",
+      "completed": false
+   },
+   {
       "title": "AWS DevOps Engineer Professional",
-      "img_url": "../images/certificates/aws-devops-engineer-professional.png"
+      "img_url": "../images/certificates/aws-devops-engineer-professional.png",
+      "completed": true
    },
    {
       "title": "Mobile Web Specialist",
-      "img_url": "../images/certificates/mobile_web_specialist.png"
+      "img_url": "../images/certificates/mobile_web_specialist.png",
+      "completed": true
    },
    {
       "title": "Professional Scrum Developer",
-      "img_url": "../images/certificates/professional-scrum-developer.png"
+      "img_url": "../images/certificates/professional-scrum-developer.png",
+      "completed": true
    },
    {
       "title": "Java SE8 Associate",
-      "img_url": "../images/certificates/java-certified.png"
+      "img_url": "../images/certificates/java-certified.png",
+      "completed": true
    },
    {
       "title": "Prince2",
-      "img_url": "../images/certificates/prince2-logo.png"
+      "img_url": "../images/certificates/prince2-logo.png",
+      "completed": true
    },
    {
       "title": "ITIL v3",
-      "img_url": "../images/certificates/itil_v3_certified.png"
+      "img_url": "../images/certificates/itil_v3_certified.png",
+      "completed": true
    }
 ]

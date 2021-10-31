@@ -12,16 +12,15 @@
             "footer": "Scrum"
          },
          {
-            "text": "Initiated collaborations to setup architecture in AWS for running API's in Docker containers and hosting frontend application via Cloudfront",
+            "text": "Initiated collaborations to setup architecture in AWS for running API's in Docker containers and hosting frontend applications via Cloudfront",
             "footer": "DevOps and Cloud"
          }
       ],
       "checkmarks": [
-         "Amazon Web Services (AWS)",
-         "Java 11",
+         "AWS / Azure",
+         "Kotlin",
          "Angular",
-         "Jenkins",
-         "Scrum and DevOps"
+         "Jenkins / Azure DevOps"
       ]
    },
    {

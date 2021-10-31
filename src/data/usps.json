@@ -2,29 +2,29 @@
    {
       "list": [
          "10+ years web development",
-         "5 years mobile web",
-         "Amazon Web Services",
-         "CI/CD pipelines"
+         "5+ years mobile web",
+         "CI/CD pipelines",
+         "AWS & Azure"
       ],
       "title": "Web Developer",
       "icon": "world"
    },
    {
       "list": [
-         "Complex corporate environments",
+         "Complex organisations",
          "Agile/Scrum practices",
-         "DevOps",
-         "Offshore teams"
+         "Knowledge sharing",
+         "DevOps"
       ],
       "title": "Team Player",
       "icon": "comment"
    },
    {
       "list": [
-         "React, React-Native and GraphQL",
-         "E-commerce and SEO",
          "Serverless Architecture",
-         "NodeJs Ecosystem."
+         "Kotlin and Micronaut",
+         "React and GraphQL",
+         "NodeJs ecosystem"
       ],
       "title": "Passionate Learner",
       "icon": "refresh"

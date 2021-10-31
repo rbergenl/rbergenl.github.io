@@ -25,6 +25,7 @@ const Certificates = ({ data }) => (
                     </div>
                     <div className="uk-card-body">
                       <h3 className="uk-card-title">{edge.node.title}</h3>
+                      { !edge.node.completed && <span className="uk-text-meta">...in progress</span>}
                     </div>
                   </div>
                 </li>
@@ -75,6 +76,7 @@ const MyCertificates = (props) => (
           edges {
             node {
               title
+              completed
               img_url {
                 childImageSharp {
                   gatsbyImageData(height: 150)
