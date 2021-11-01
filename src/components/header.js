@@ -5,7 +5,38 @@ import styled from "styled-components"
 import profilePicture from "../images/profile-picture.webp"
 // import GithubIcon from '../images/svgs/github.svg';
 
-const Header = ({ siteTitle }) => (
+const ToHomeLink = () => (
+  <li>
+    <a href="/" rel="noopener noreferrer" aria-label="home">Home</a>
+  </li>
+)
+
+const HomepageLinks = () => (
+  <>
+    <li>
+      <a href="#projects" data-uk-scroll>
+        Projects
+      </a>
+    </li>
+    <li>
+      <a href="#testimonials" data-uk-scroll>
+        Testimonials
+      </a>
+    </li>
+    <li>
+      <a href="#certificates" data-uk-scroll>
+        Certificates
+      </a>
+    </li>
+    <li>
+      <a href="#contact" data-uk-scroll>
+        Contact
+      </a>
+    </li>
+  </>
+)
+
+const Header = ({ siteTitle, isHome }) => (
   <StyledHeader className="background-primary uk-light">
     <div
       id="sticky"
@@ -13,35 +44,16 @@ const Header = ({ siteTitle }) => (
     >
       <nav className="uk-navbar-container background-primary" data-uk-navbar>
         <div className="uk-navbar-left">
-          <img src={profilePicture} alt="profile" />
           <Link to="/" className="uk-navbar-item uk-logo" href="#">
-            RTB Projects
+            <img src={profilePicture} alt="profile" />
+            {siteTitle}
           </Link>
           {/* <a className="uk-navbar-item uk-logo" aria-label="github rbergenl" href="https://github.com/rbergenl" target="_blank" rel="noreferrer noopener"><GithubIcon className="github-icon" /></a> */}
         </div>
         <div className="uk-navbar-right uk-visible@m">
+          
           <ul className="uk-navbar-nav">
-            <li>
-              <a href="#projects" data-uk-scroll>
-                Projects
-              </a>
-            </li>
-            {/* <li><a href="#demos" data-uk-scroll>Demos</a></li> */}
-            <li>
-              <a href="#testimonials" data-uk-scroll>
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#certificates" data-uk-scroll>
-                Certificates
-              </a>
-            </li>
-            <li>
-              <a href="#contact" data-uk-scroll>
-                Contact
-              </a>
-            </li>
+            {isHome ? <HomepageLinks /> : <ToHomeLink />  }
           </ul>
         </div>
         <div
@@ -56,27 +68,7 @@ const Header = ({ siteTitle }) => (
               data-uk-close
             ></button>
             <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-              <li>
-                <a href="#projects" data-uk-scroll>
-                  Projects
-                </a>
-              </li>
-              {/* <li><a href="#demos" data-uk-scroll>Demos</a></li> */}
-              <li>
-                <a href="#testimonials" data-uk-scroll>
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#certificates" data-uk-scroll>
-                  Certificates
-                </a>
-              </li>
-              <li>
-                <a href="#contact" data-uk-scroll>
-                  Contact
-                </a>
-              </li>
+              {isHome ? <HomepageLinks /> : <ToHomeLink />  }
             </ul>
           </div>
         </div>

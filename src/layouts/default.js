@@ -31,7 +31,7 @@ class LayoutDefault extends React.Component {
   }
 
   render() {
-    const { children } = this.props
+    const { children, isHome } = this.props
 
     if (!this.state.ready) return null
 
@@ -48,7 +48,7 @@ class LayoutDefault extends React.Component {
         `}
         render={(data) => (
           <>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header siteTitle={data.site.siteMetadata.title} isHome={isHome} />
             <main>{children}</main>
             <Footer />
           </>
@@ -60,6 +60,7 @@ class LayoutDefault extends React.Component {
 
 LayoutDefault.propTypes = {
   children: PropTypes.node.isRequired,
+  isHome: PropTypes.bool
 }
 
 export default LayoutDefault

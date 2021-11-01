@@ -11,7 +11,7 @@ import Certificates from "../components/certificates"
 import Contact from "../components/contact"
 
 const IndexPage = () => (
-  <LayoutDefault>
+  <LayoutDefault isHome>
     <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Usps />
     <Techstack />
