@@ -35,7 +35,7 @@ const AholdPage = () => (
                     <ExampleItem> <a className="uk-button uk-button-text" rel="noreferrer" href="/images/drawio_aws_architecture_diagram.png" target="_blank">AWS architecture diagram. (draw.io)</a> </ExampleItem>
                 </ExampleArea>
 
-                <p>Ook vroeg ik of wireframes / designs aanwezig zijn van hoe de frontend er ongeveer uit moet komen te zien. Het lijkt mij slim om een prototype te maken en die voor te leggen aan de eindgebruikers. Zo krijg je heel snel waardevolle feedback. Omdat dit project voor "interne stakeholders" is verwacht ik niet extreem hoge eisen aan het design. Maar het moet denk ik wel een vriendelijk werkbare UI zijn. Het prototype dient ook als requirements die ik als frontend developer nodig heb. Zie hier twee voorbeelden van wat ik eerder heb gemaakt:</p>
+                <p>Ook vroeg ik of wireframes / designs aanwezig zijn van hoe de frontend er ongeveer uit moet komen te zien. Het lijkt mij slim om een prototype te maken en die voor te leggen aan de eindgebruikers. Zo krijg je heel snel waardevolle feedback. Omdat dit project voor "interne stakeholders" is verwacht ik niet extreem hoge eisen aan het design. Maar het moet denk ik wel een vriendelijk werkbare UI zijn. Het prototype dient ook als requirements die ik als frontend developer nodig heb. Zie hier een voorbeeld van wat ik eerder heb gemaakt:</p>
                 <ExampleArea>
                     <ExampleItem> <a className="uk-button uk-button-text" rel="noreferrer" href="https://www.figma.com/proto/ElnJUQa7MhB0OCM23onGrN/MealByUs-v1?node-id=1%3A2" target="_blank">Moestuinen en avondeten met buren. (figma)</a> </ExampleItem>
                 </ExampleArea>
