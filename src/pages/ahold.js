@@ -17,7 +17,7 @@ const AholdPage = () => (
             <article className="uk-article">
                 <h1 className="uk-article-title"><a className="uk-link-reset" href="/#">Ahold</a></h1>
 
-                <p className="uk-article-meta">Geschreven door Robin ten Berge op 31 Oktober 2021</p>
+                <p className="uk-article-meta">Geschreven door Robin ten Berge op 1 november 2021</p>
 
                 <div className="uk-grid-small uk-child-width-auto">
                     <div>
